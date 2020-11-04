@@ -87,7 +87,7 @@ $  iptables -A FORWARD -p tcp  -i eth2  --dport 80 -j ACCEPT
 $  iptables -A POSTROUTING -t nat -p tcp -d 10.10.10.30 --dport 80 -j SNAT --to-source 10.10.10.10
 ```
 
-Where: 10.10.10.30 = LoadBalancer IP / 10.10.10.10 eth1 on my internal network
+Where: 10.10.10.30 = LoadBalancer IP / 10.10.10.10 eth1 of my internal network
 
-[metallb_l2.yml]: http://https://github.com/tixsalvador/kubernetes-metallb/blob/main/metallb_l2.yml
+[metallb_l2.yml]: https://github.com/tixsalvador/kubernetes-metallb/blob/main/metallb_l2.yml
 [nginx_plain.yaml]: https://github.com/tixsalvador/kubernetes-metallb/blob/main/nginx_plain.yaml
