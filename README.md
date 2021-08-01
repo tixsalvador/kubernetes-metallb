@@ -26,7 +26,7 @@ or to automate this.
 
 ```sh
 kubectl get configmap kube-proxy -n kube-system -o yaml | \
-sed -e "s/strictARP: false/strictARP: true/" | \
+sed -e '/strictARP/s/false/true/' | \
 kubectl apply -f - -n kube-system
 ```
 
