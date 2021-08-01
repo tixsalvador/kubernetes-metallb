@@ -91,3 +91,6 @@ Where: 10.10.10.30 = LoadBalancer IP / 10.10.10.10 eth1 of my internal network
 
 [metallb_l2.yml]: https://github.com/tixsalvador/kubernetes-metallb/blob/main/metallb_l2.yml
 [nginx_plain.yaml]: https://github.com/tixsalvador/kubernetes-metallb/blob/main/nginx_plain.yaml
+
+## SOURCE
+https://metallb.universe.tf/installation/
